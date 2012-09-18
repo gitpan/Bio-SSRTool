@@ -16,7 +16,7 @@
    "prereqs" : {
       "build" : {
          "requires" : {
-            "Test::More" : 0
+            "Test::Exports" : 0
          }
       },
       "configure" : {
@@ -26,6 +26,7 @@
       },
       "runtime" : {
          "requires" : {
+            "IO::Scalar" : 0,
             "perl" : "5.006"
          }
       }
@@ -33,7 +34,7 @@
    "provides" : {
       "Bio::SSRTool" : {
          "file" : "lib/Bio/SSRTool.pm",
-         "version" : "0.01"
+         "version" : "0.02"
       }
    },
    "release_status" : "stable",
@@ -42,5 +43,5 @@
          "http://opensource.org/licenses/gpl-license.php"
       ]
    },
-   "version" : "0.01"
+   "version" : "0.02"
 }

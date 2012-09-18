@@ -6,7 +6,8 @@ WriteMakefile
   'NAME' => 'Bio::SSRTool',
   'VERSION_FROM' => 'lib/Bio/SSRTool.pm',
   'PREREQ_PM' => {
-                   'Test::More' => 0
+                   'IO::Scalar' => 0,
+                   'Test::Exports' => 0
                  },
   'INSTALLDIRS' => 'site',
   'EXE_FILES' => [],

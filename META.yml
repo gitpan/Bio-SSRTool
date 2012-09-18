@@ -3,7 +3,7 @@ abstract: 'The great new Bio::SSRTool!'
 author:
   - 'Ken Youens-Clark <kclark@cpan.org>'
 build_requires:
-  Test::More: 0
+  Test::Exports: 0
 configure_requires:
   Module::Build: 0.40
 dynamic_config: 1
@@ -16,9 +16,10 @@ name: Bio-SSRTool
 provides:
   Bio::SSRTool:
     file: lib/Bio/SSRTool.pm
-    version: 0.01
+    version: 0.02
 requires:
+  IO::Scalar: 0
   perl: 5.006
 resources:
   license: http://opensource.org/licenses/gpl-license.php
-version: 0.01
+version: 0.02

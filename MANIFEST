@@ -1,7 +1,6 @@
 Build.PL
 Changes
 lib/Bio/SSRTool.pm
-Makefile.PL
 MANIFEST			This list of files
 META.json
 META.yml
@@ -14,3 +13,4 @@ t/data/input.txt
 t/manifest.t
 t/pod-coverage.t
 t/pod.t
+Makefile.PL

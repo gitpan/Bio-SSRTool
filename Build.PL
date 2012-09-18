@@ -13,8 +13,9 @@ my $builder = Module::Build->new(
     },
     requires => {
         'perl' => 5.006,
+        'IO::Scalar' => 0,
     },
-    test_requires => {
+    build_requires => {
         'Test::Exports' => 0,
     },
     add_to_cleanup      => [ 'Bio-SSRTool-*' ],
