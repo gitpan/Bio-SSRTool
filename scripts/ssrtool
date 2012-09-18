@@ -67,6 +67,7 @@ Options:
 
   -r|--min-repeats  A postive integer defining the minimum number of repeats
   -l|--motif-length A postive integer defining the length of the repeat
+  -o|--out-file     A file to write the output (default is STDOUT)
   --help            Show brief help and exit
   --man             Show full documentation
 

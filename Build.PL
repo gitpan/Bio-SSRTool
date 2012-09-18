@@ -16,6 +16,7 @@ my $builder = Module::Build->new(
         'IO::Scalar' => 0,
     },
     build_requires => {
+        'Module::Build' => 0.4003,
         'Test::Exports' => 0,
     },
     add_to_cleanup      => [ 'Bio-SSRTool-*' ],

@@ -4,7 +4,7 @@
       "Ken Youens-Clark <kclark@cpan.org>"
    ],
    "dynamic_config" : 1,
-   "generated_by" : "Module::Build version 0.4001, CPAN::Meta::Converter version 2.112150",
+   "generated_by" : "Module::Build version 0.4003, CPAN::Meta::Converter version 2.112150",
    "license" : [
       "open_source"
    ],
@@ -16,6 +16,7 @@
    "prereqs" : {
       "build" : {
          "requires" : {
+            "Module::Build" : "0.4003",
             "Test::Exports" : 0
          }
       },
@@ -34,7 +35,7 @@
    "provides" : {
       "Bio::SSRTool" : {
          "file" : "lib/Bio/SSRTool.pm",
-         "version" : "0.02"
+         "version" : "0.03"
       }
    },
    "release_status" : "stable",
@@ -43,5 +44,5 @@
          "http://opensource.org/licenses/gpl-license.php"
       ]
    },
-   "version" : "0.02"
+   "version" : "0.03"
 }
