@@ -2,7 +2,6 @@
 
 use strict;
 use warnings;
-use autodie;
 use Bio::SSRTool qw( find_ssr );
 use Getopt::Long;
 use Pod::Usage;
@@ -32,7 +31,7 @@ my $args  = { min_repeats => $min_repeats, motif_lenfth => $motif_length };
 
 my $out;
 if ( $out_file ) {
-    open $out, '>', $out_file;
+    open $out, '>', $out_file or die "Can't write '$out_file': $!\n";;
 }
 else {
     $out = \*STDOUT;

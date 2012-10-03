@@ -3,7 +3,6 @@ package Bio::SSRTool;
 use 5.006;
 use strict;
 use warnings;
-use autodie;
 use vars qw( @ISA @EXPORT @EXPORT_OK );
 use Carp qw( croak );
 use IO::Scalar;
@@ -12,17 +11,11 @@ use IO::Scalar;
 @EXPORT = qw( find_ssr );
 @EXPORT_OK = qw( find_ssr );
 
+our $VERSION = '0.04';
+
 =head1 NAME
 
 Bio::SSRTool - The great new Bio::SSRTool!
-
-=head1 VERSION
-
-Version 0.01
-
-=cut
-
-our $VERSION = '0.03';
 
 =head1 SYNOPSIS
 
@@ -85,7 +78,7 @@ A positive integer between 1 and 10.  Default is 4.
     if ( ref $seq ne 'GLOB' ) {
         if ( $seq !~ /\n$/ && -e $seq ) {
             my $tmp = $seq;
-            open my $fh, '<', $tmp;
+            open my $fh, '<', $tmp or die "Can't read '$tmp': $!\n";
             $seq = $fh;
         }
         else {

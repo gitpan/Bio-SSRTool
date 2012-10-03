@@ -1,5 +1,4 @@
 use strict;
-use autodie;
 use FindBin '$Bin';
 use File::Spec::Functions;
 use Test::More tests => 7;
@@ -52,12 +51,12 @@ my $file = catfile( $Bin, 'data', 'input.txt' );
 
 my $text;
 {
-    open my $fh, '<', $file;
+    open my $fh, '<', $file or die "Can't read '$file': $!\n";
     $text = join '', <$fh>;
     close $fh;
 }
 
-open my $fh, '<', $file;
+open my $fh, '<', $file or die "Can't read '$file': $!\n";;
 
 for my $input ( $file, $text, $fh ) {
     my @ssrs = find_ssr( $input, { motif_length => 4, min_repeats => 5 } );

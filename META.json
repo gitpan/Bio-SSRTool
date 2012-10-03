@@ -35,7 +35,7 @@
    "provides" : {
       "Bio::SSRTool" : {
          "file" : "lib/Bio/SSRTool.pm",
-         "version" : "0.03"
+         "version" : "0.04"
       }
    },
    "release_status" : "stable",
@@ -44,5 +44,5 @@
          "http://opensource.org/licenses/gpl-license.php"
       ]
    },
-   "version" : "0.03"
+   "version" : "0.04"
 }
